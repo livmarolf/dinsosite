@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservations</title>
+    <link rel="stylesheet" href="/styles/reservations.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="pages/reservations.html">Reservations</a>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="hero-content">
+        <img src="../images/girlcropped.jpg" />
+      </div>
+
+      <div class="web-form">
+        <form
+          action="https://httpbin.org/post"
+          method="post"
+          enctype="application/json"
+        >
+          <p class="form-title">Fill out the form below</p>
+          <label for="email">Enter email:</label>
+          <input type="text" id="email" name="user-info" /><br />
+          <label for="flname">Enter Name:</label>
+          <input type="text" id="flname" name="user-info" /><br />
+          <label for="phone">Phone number:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="user-info"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="000-000-0000"
+            required
+          /><br />
+
+          <label for="start-date">Start date:</label>
+          <input type="date" id="start-date" name="date" /><br />
+          <label for="end-date">End date:</label>
+          <input type="date" id="end-date" name="date" /><br />
+
+          <p>Please select your age:</p>
+          <input type="radio" id="age1" name="age" value="20" />
+          <label for="age1">0-20</label><br />
+          <input type="radio" id="age2" name="age" value="over-20" />
+          <label for="age2">20+</label>
+
+          <p>Please select all acceptable dinosaur types:</p>
+          <input type="checkbox" id="dino1" name="dinos" value="T-rex" />
+          <label for="dino1">T-rex</label><br />
+          <input type="checkbox" id="dino2" name="dinos" value="Velociraptor" />
+          <label for="dino2">Velociraptor</label><br />
+          <input type="checkbox" id="dino3" name="dinos" value="Brontosaurus" />
+          <label for="dino3">Brontosaurus</label><br /><br />
+
+          <label for="story1">How did you hear about us?</label>
+          <select name="userstory" id="story1">
+            <option value="Friend">Friend</option>
+            <option value="Family member">Family member</option>
+            <option value="Ad">Ad</option>
+            <option value="Forced">I was forced into this</option>
+            <option value="Other">Other</option></select
+          ><br />
+          <input class="submit-button" type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+    <div class="footer"></div>
+  </body>
+  <script src="script.js"></script>
+</html>

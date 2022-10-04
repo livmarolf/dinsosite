@@ -1,0 +1,72 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #cad2c5;
+  font-family: Tahoma, sans-serif;
+}
+
+.navbar {
+  background-color: #2f3e46;
+  height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: block;
+  margin-left: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin: 10px;
+  font-size: 15px;
+  color: #cad2c5;
+  border: 1px solid transparent;
+  padding: 6px;
+}
+
+.nav-links a:hover {
+  border-radius: 10px;
+  border: 1px solid #cad2c5;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  height: 70%;
+  overflow: hidden;
+}
+
+.main-header h1 {
+  color: #cad2c5;
+  font-size: 42px;
+  position: absolute;
+  top: 16px;
+  right: 200px;
+}
+
+.main-header h2 {
+  color: #cad2c5;
+  position: absolute;
+  top: 72px;
+  right: 204px;
+}
+
+.main-content {
+  text-align: center;
+  display: grid;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  display: flex;
+  justify-content: flex-end;
+}
